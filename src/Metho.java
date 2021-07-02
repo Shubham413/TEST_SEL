@@ -14,7 +14,7 @@ public class Metho {
            // Instantiate a ChromeDriver class.     
         WebDriver driver=new ChromeDriver();  
           
-           // Launch LinkedIN Website  
+           // Launch testandquiz website
         driver.navigate().to("https://www.testandquiz.com/selenium/testing.html");  
        
           //Maximize the browser  
