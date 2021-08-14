@@ -1,3 +1,4 @@
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;  
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,17 +20,18 @@ public class Metho {
        
           //Maximize the browser  
         driver.manage().window().maximize();      
-
+        
         WebElement a = driver.findElement(By.xpath("//button[@id='idOfButton']"));
         a.click();
         
         Actions actions = new Actions(driver);
         WebElement elementLocator = driver.findElement(By.xpath("//button[@id='dblClkBtn']"));
         actions.doubleClick(elementLocator).perform();
+        Alert a1 = driver.switchTo().alert();
+        a1.accept();
         
-        Thread.sleep(5000);
-        driver.close();
-       
+        Thread.sleep(1000);
+        driver.close();       
        
   
     }  

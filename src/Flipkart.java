@@ -16,21 +16,23 @@ public class Flipkart {
      WebDriver driver=new ChromeDriver();  
        
         // Launch LinkedIN Website  
-     driver.navigate().to("https://www.flipkart.com/");  
+     driver.navigate().to("https://www.facebook.com/");  
     
        //Maximize the browser  
      driver.manage().window().maximize();      
-     Thread.sleep(10000);
+     Thread.sleep(2000);
      //WebElement a = driver.findElement(By.xpath("//img[@class= '_396cs4 _3exPp9'][@alt = \"Grocery\"]"));
-      WebElement a = driver.findElement(By.xpath("//img[@alt = 'Grocery']"));
+     driver.findElement(By.xpath("//a[@title='English (UK)']")).click();
+     Thread.sleep(2000);
+      WebElement a = driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']"));
      a.click();
      
     // Actions actions = new Actions(driver);
     // WebElement elementLocator = driver.findElement(By.xpath("//button[@id='dblClkBtn']"));
     // actions.doubleClick(elementLocator).perform();
-     
-     Thread.sleep(5000);
-     driver.close();
+     Thread.sleep(3000);
+     driver.findElement(By.xpath("//input[@name='sex'][@value=1]")).click();
+     //driver.close();
     
     
 

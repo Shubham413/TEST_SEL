@@ -10,8 +10,8 @@ public class Food {
     public Food(String name, String name1){
       
         System.out.println("Main Constructor initiated");
-        System.out.println(name);
-        System.out.println(name1);
+        this.name = name;
+        this.name1 = name1;
     }
    
 }

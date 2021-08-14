@@ -22,11 +22,9 @@ public class CreateExcelFileExample3 {
         // creating a row object 
         XSSFRow row;
         // This data needs to be written (Object[]) 
-        Map<String, Object[]> studentData
-                = new TreeMap<String, Object[]>();
+        Map<String, Object[]> studentData = new TreeMap<String, Object[]>();
 
-        studentData.put("1", new Object[] { "Employee Id", "NAME", "POST" });
-        
+        studentData.put("1", new Object[] { "Employee Id", "NAME", "POST" });      
         studentData.put("2", new Object[] { "1301", "Prajjawal", "Intern" });
         studentData.put("3", new Object[] { "1302", "Nitish", "Software Consultant" });
         studentData.put("4", new Object[] { "1303", "Aditi", "QA Engineer" });

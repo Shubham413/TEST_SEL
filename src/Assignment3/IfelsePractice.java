@@ -14,7 +14,11 @@ public class IfelsePractice {
 			System.out.println("Invalid Percentage as it is greater than 100");
 		}
 		else if(Percentage>=60){
-        	System.out.println("Passed with first division");	
+        	System.out.println("Passed with first division");
+        	if(Percentage>=75) 
+        	{
+        		System.out.println("Achievement: Distinction");
+        	}
         }
 		else if(Percentage<60 && Percentage >=33) {
 			System.out.println("Passed with Second Division");
